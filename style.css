@@ -1,84 +1,63 @@
 body {
-    display: flex;
-    justify-content: center;
-   
-   font-family: Cursive;
-  
-   
+  display: flex;
+  justify-content: center;
+  font-family: Cursive;
 }
-.MainContainer{
-    border: 1px solid black;
-    border-radius: 10px;
-    background: linear-gradient(#e66465, #9198e5);
-    padding:80px;
-   
-    
+.MainContainer {
+  border: 1px solid white;
+  border-radius: 10px;
+  background: linear-gradient(#e66465, #9198e5);
+  padding: 80px;
 }
-.MainContainer__NameBox{
-    display: flex;
-    margin-bottom: 20px;
-    
+.MainContainer__NameBox {
+  display: flex;
+  margin-bottom: 20px;
 }
 
-.NameBox__TextInput{
- border-radius: 4px;
- border:1px solid gray;
- padding: 8px;
-margin: 14px;
-margin-left: 0px;
+.TextInput {
+  border-radius: 4px;
+  border: 1px solid gray;
+  padding: 8px;
+  margin: 14px;
+  margin-left: 0px;
 }
-.NameBox__TextInput--BirthdayBox{
-    margin-left: 20px;
+.TextInput--BirthdayBox {
+  margin-left: 20px;
 }
-.MainContainer__RestInfo{
-    display: flex;
-   flex-direction: column;
-   /* border:1px solid black; */
+.MainContainer__RestInfo {
+  display: flex;
+  flex-direction: column;
 }
-.RestInfo__Gender{
-    margin-top: 14px;
-    margin-bottom: 14px;
+.RestInfo__Gender {
+  margin-top: 14px;
+  margin-bottom: 14px;
 }
-.RestInfo__Country{
-    padding: 6px;
-    font-family:Arial, Helvetica, sans-serif;
+.RestInfo__Country {
+  padding: 6px;
+  font-family: Arial, Helvetica, sans-serif;
 }
-.RestInfo__SelectFile{
-margin-top: 30px;
-margin-bottom: 50px;
+.RestInfo__SelectFile {
+  margin-top: 30px;
+  margin-bottom: 50px;
 }
-.SelectFile__Button{
-    border-radius: 4px;
+.SelectFile__Button {
+  border-radius: 4px;
 }
-.RestInfo__SubmitButton{
-border-radius: 4px;
-padding: 8px;
-margin-top: 20px;
-background-color:rgb(238, 180, 236);
-font-family: Cursive;
-font-weight: bold;
-border: none;
+.RestInfo__SubmitButton {
+  border-radius: 4px;
+  padding: 8px;
+  margin-top: 20px;
+  background-color: rgb(238, 180, 236);
+  font-family: Cursive;
+  font-weight: bold;
+  border: none;
 }
 
 ::-webkit-file-upload-button {
   background-color: rgb(238, 180, 236);
   border: none;
   border-radius: 4px;
-  padding:6px 10px 6px 10px;
+  padding: 6px 10px 6px 10px;
   font-family: cursive;
   font-weight: bold;
-    
-  }
-
-/* input[type="file"] {
-    display: none;
-} */
-/* .custom-file-upload {
-    border: 1px solid #ccc;
-    display: inline-block;
-    padding: 6px 12px;
-    cursor: pointer;
-} */
-/* input:focus{
-    outline: none;
-} */
+}
