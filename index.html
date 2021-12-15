@@ -4,6 +4,8 @@
 <head>
   <title>User Form</title>
   <link href="style.css" rel="stylesheet" />
+  <script src='http://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.2.1.js'></script>
+  <script src='script.js' type="text/javascript"></script>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
@@ -16,38 +18,40 @@
       <div class="MainContainer__NameBox">
         <div>
           <label>First Name:</label><br>
-          <input type="text" placeholder="Fisrt Name" class="TextInput">
+          <input type="text" placeholder="Fisrt Name" class="TextInput" minlength="3" maxlength="10" required="true">
         </div>
         <div>
           <label>Last Name:</label><br>
-          <input type="text" class="TextInput" placeholder="Last Name">
+          <input type="text" class="TextInput" placeholder="Last Name" minlength="3" maxlength="10" required="true">
         </div>
       </div>
       <div class="MainContainer__RestInfo">
         <label>Email:</label>
-        <input type="email" placeholder="Email" class="TextInput">
+        <input type="email" placeholder="Email" class="TextInput" required="true">
+        <label id="emailMessage"></label>
         <label>Password:</label>
-        <input type="password" placeholder="Password" class="TextInput">
+        <input type="password" placeholder="Password" class="TextInput" id="password" required="true">
+        <label id="passwordAlert"></label>
         <label>Confirm Password:</label>
-        <input type="password" placeholder="Re type password" class="TextInput">
-
+        <input type="password" placeholder="Re type password" class="TextInput" id="confirmedpass" required="true">
+        <label id="confirmedpasswordAlert"></label>
         <div>
           <label>Birthday:</label>
-          <input type="date" class="TextInput TextInput--BirthdayBox">
+          <input type="date" class="TextInput TextInput--BirthdayBox" required="true">
         </div>
 
         <div class="RestInfo__Gender">
           <label>Gender:</label>
-          <input type="radio" id="male" name="gender" value="male">
+          <input type="radio" id="male" name="gender" value="male" required="true">
           <label for="male">Male</label>
-          <input type="radio" id="female" name="gender" value="female">
+          <input type="radio" id="female" name="gender" value="female" required="true">
           <label for="female">Female</label>
-          <input type="radio" id="other" name="gender" value="other">
+          <input type="radio" id="other" name="gender" value="other" required="true">
           <label for="other">Other</label><br><br>
         </div>
         <div>
           <label>Country:</label>
-          <select id="country" name="country" class="RestInfo__Country">
+          <select id="country" name="country" class="RestInfo__Country" required="true">
             <option value="Afganistan">Afghanistan</option>
             <option value="Albania">Albania</option>
             <option value="Algeria">Algeria</option>
